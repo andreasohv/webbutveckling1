@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="arrow-circle-down" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 512 512">
+  <!-- Generator: Adobe Illustrator 30.2.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #eee;
+      }
+    </style>
+  </defs>
+  <path class="st0" d="M512,384H64l55.47,55.47-30.23,30.1L12.44,392.77c-16.66-16.66-16.66-43.67,0-60.33l76.14-76.14,30.17,30.17-54.74,54.87h448v42.67h-.01ZM393.09,225.56l30.17,30.17,76.25-76.22c16.66-16.66,16.66-43.67,0-60.33l-76.65-76.65-30.17,30.17,55.32,55.32H0v42.67h448l-54.91,54.89v-.02Z"/>
+</svg>
