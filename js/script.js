@@ -574,9 +574,7 @@ const dictionary = {
 
     "bil": {
         type:"noun",
-        gender:"masc",
-        animacy:"inan",
-        hardness:"hard",
+        gender:"neut",
         stem:"avto"
     },
 
@@ -602,6 +600,14 @@ const dictionary = {
         type:"noun",
         gender:"fem",
         stem:"hiž"
+    },
+
+    "gud": {
+        type:"noun",
+        gender:"masc",
+        animacy:"anim",
+        hardness:"hard",
+        stem:"bog",
     },
 
     // ======================================
@@ -713,7 +719,67 @@ const dictionary = {
         type:"adv",
         vs:"brzo"
     },
+
+    "detta": {
+        type:"adv",
+        vs:"ta"
+    },
+
+    "denna": {
+        type:"adv",
+        vs:"taj"
+    },
+
+    "här": {
+        type:"adv",
+        vs:"tu"
+    },
+
+    "där": {
+        type:"adv",
+        vs:"tamo"
+    },
+
+    "vem": {
+        type:"adv",
+        vs:"kto"
+    },
+
+    "vad": {
+        type:"adv",
+        vs:"što"
+    },
+
+    "var": {
+        type:"adv",
+        vs:"kde"
+    },
+
+    "när": {
+        type:"adv",
+        vs:"kdaj"
+    },
+
+    "hur": {
+        type:"adv",
+        vs:"kako"
+    },
+
+    // ======================================
+    // INTERJECTIONS
+    // ======================================
+
+    "hej": {
+        type:"intr",
+        vs:"zdravo"
+    },
+
+    "hejdå": {
+        type:"intr",
+        vs:"zbogom"
+    },
 };
+
 
 // ==========================================
 // STATE
@@ -1452,6 +1518,22 @@ function translateEngine(){
                 )
             );
 
+            continue;
+        }
+
+        // ==================================
+        // INTERJECTIONS
+        // ==================================
+
+        if(entry.type === "intr"){
+
+            result.push(
+
+                applyCase(
+                    original,
+                    entry.vs
+                )
+            );
             continue;
         }
     }
